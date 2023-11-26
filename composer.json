@@ -1,0 +1,12 @@
+{
+    "name": "html/parse",
+    "require": {
+        "imangazaliev/didom": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HtmlParse\\": "HtmlParse/"
+        }
+    }
+
+}
