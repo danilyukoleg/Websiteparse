@@ -29,7 +29,7 @@ class Helper
 
         foreach ($data as $key => $value) {
             array_push($nameFunc, "{{ $key }}");
-            array_push($valueFunc, $value);
+            array_push($valueFunc, trim($value));
         }
 
         return str_replace([...$nameFunc], [...$valueFunc], $tpl);
@@ -45,6 +45,7 @@ class Helper
 
         return str_replace(array_keys($nameCode), array_values($nameCode), $text);
     }
+
 
     public static function getTranslit($value)
 
